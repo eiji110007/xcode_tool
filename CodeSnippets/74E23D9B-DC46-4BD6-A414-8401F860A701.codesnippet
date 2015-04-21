@@ -3,23 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>zm_dispatch_back</string>
+	<string>zm_dispatch_back_main</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-    
-});</string>
+	<string>dispatch_async(dispatch_get_global_queue(&lt;#dispatch_queue_priority_t priority#&gt;, &lt;#unsigned long flags#&gt;), ^(void) {
+        &lt;#code#&gt;
+        
+        dispatch_async(dispatch_get_main_queue(), ^(void) {
+            &lt;#code#&gt;
+        });
+    });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>19B2B93F-C894-43C2-A7E5-58191E12331F</string>
+	<string>74E23D9B-DC46-4BD6-A414-8401F860A701</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>dispatch in background</string>
+	<string>Dispatch to do work in the background, and then to the main queue with the results</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>dispatch in background</string>
+	<string>dispatch_async Pattern for Background Processing</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

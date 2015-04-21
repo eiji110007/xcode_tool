@@ -3,26 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>zm_dispatch_back</string>
+	<string>zm_picker_datasource</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-    
-});</string>
+	<string>#pragma mark - UIPickerDataSource
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView
+numberOfRowsInComponent:(NSInteger)component
+{
+    return &lt;#number#&gt;
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return &lt;#number#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>19B2B93F-C894-43C2-A7E5-58191E12331F</string>
+	<string>BA286597-6545-4583-AA41-E388E5A9EE89</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>dispatch in background</string>
+	<string>Placeholders for required UIPickerView datasource methods</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>dispatch in background</string>
+	<string>UIPickerViewDataSource</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

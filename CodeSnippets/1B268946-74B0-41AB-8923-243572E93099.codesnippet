@@ -17,7 +17,7 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>GCD:dispatch_asyc in main queue</string>
+	<string>dispatch_asyc in main queue</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>dispatch_asyc in main queue</string>
 	<key>IDECodeSnippetUserSnippet</key>
